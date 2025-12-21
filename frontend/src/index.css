@@ -1,0 +1,113 @@
+:root {
+	--primary: #2563eb;
+	--bg: #f8fafc;
+	--white: #ffffff;
+	--text: #334155;
+	--border: #e2e8f0;
+}
+
+body {
+	margin: 0;
+	font-family: system-ui, -apple-system, sans-serif;
+	background-color: var(--bg);
+	color: var(--text);
+	line-height: 1.5;
+}
+
+nav {
+	background: var(--white);
+	padding: 1rem 2rem;
+	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+nav a {
+	text-decoration: none;
+	color: var(--text);
+	margin-right: 1.5rem;
+	font-weight: 500;
+}
+
+nav a:hover {
+	color: var(--primary);
+}
+
+nav button {
+	background: none;
+	border: 1px solid var(--border);
+	padding: 0.5rem 1rem;
+	border-radius: 4px;
+	cursor: pointer;
+}
+
+.container {
+	max-width: 800px;
+	margin: 2rem auto;
+	padding: 0 1rem;
+}
+
+.card {
+	background: var(--white);
+	padding: 2rem;
+	border-radius: 8px;
+	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+	margin-bottom: 1.5rem;
+}
+
+input,
+select,
+textarea {
+	width: 100%;
+	padding: 0.75rem;
+	margin-bottom: 1rem;
+	border: 1px solid var(--border);
+	border-radius: 4px;
+	box-sizing: border-box;
+	font-size: 1rem;
+}
+
+button.primary {
+	background-color: var(--primary);
+	color: var(--white);
+	border: none;
+	padding: 0.75rem 1.5rem;
+	border-radius: 4px;
+	font-size: 1rem;
+	cursor: pointer;
+	width: 100%;
+}
+
+button.primary:hover {
+	opacity: 0.9;
+}
+
+h2 {
+	margin-top: 0;
+	color: #1e293b;
+}
+
+.score-row {
+	margin-bottom: 1.5rem;
+}
+
+label {
+	display: block;
+	margin-bottom: 0.5rem;
+	font-weight: 500;
+}
+
+.range-wrap {
+	display: flex;
+	align-items: center;
+	gap: 1rem;
+}
+.no-scrollbar::-webkit-scrollbar {
+	display: none;
+}
+/* Hide scrollbar for IE, Edge and Firefox */
+.no-scrollbar {
+	-ms-overflow-style: none; /* IE and Edge */
+	scrollbar-width: none; /* Firefox */
+}
