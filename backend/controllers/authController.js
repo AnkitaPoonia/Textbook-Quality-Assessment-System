@@ -11,6 +11,7 @@ const cookieOptions = {
 	path: "/", // 👈 CRITICAL: Forces cookie to apply to the whole site
 };
 
+
 // --- HELPER: Generate JWT Token ---
 const generateToken = (res, user) => {
 	const token = jwt.sign(
