@@ -27,12 +27,28 @@ dotenv.config();
 const app = express();
 
 
+const allowedOrigins = [
+  "http://localhost:5173",
+  process.env.CLIENT_URL,
+];
+
 app.use(
-	cors({
-		origin: [process.env.CLIENT_URL],
-		credentials: true,
-	})
+  cors({
+    origin: function (origin, callback) {
+      if (!origin) return callback(null, true);
+
+      if (allowedOrigins.includes(origin)) {
+        return callback(null, true);
+      }
+
+      return callback(new Error("CORS not allowed"));
+    },
+    credentials: true,
+  })
 );
+
+// handle preflight
+app.options("*", cors());
 app.use(express.json());
 app.use(cookieParser());
 
