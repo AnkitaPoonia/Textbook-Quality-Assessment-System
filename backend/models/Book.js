@@ -12,6 +12,7 @@ const bookSchema = new mongoose.Schema(
 		pdfUrl: { type: String },
 		isLibraryBook: { type: Boolean, default: false },
 
+		
 		// 👇 NEW FIELDS ADDED HERE
 		finalScore: { type: Number, default: 0 },
 		studentAvg: { type: Number, default: 0 }, // Store Student Score
