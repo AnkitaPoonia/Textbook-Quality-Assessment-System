@@ -9,7 +9,7 @@ import AddBook from "./pages/AddBook.jsx";
 import ReviewBook from "./pages/ReviewBook.jsx";
 import Admin from "./pages/Admin.jsx";
 import UserProfile from "./pages/UserProfile.jsx";
-import AdminLogin from "./pages/AdminLogin.jsx";
+import AdminLogin from "./pages/AdminLog.jsx";
 import ProtectedRoute from "./component/ProtectedRoute.jsx";
 import Navbar from "./component/Navbar.jsx";
 import Footer from "./component/Footer.jsx";
