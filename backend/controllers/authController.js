@@ -12,6 +12,8 @@ const cookieOptions = {
 };
 
 
+
+
 // --- HELPER: Generate JWT Token ---
 const generateToken = (res, user) => {
 	const token = jwt.sign(
