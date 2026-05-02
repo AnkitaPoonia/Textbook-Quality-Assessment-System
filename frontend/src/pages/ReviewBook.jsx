@@ -26,7 +26,7 @@ const StarInput = ({ value, onChange }) => {
 						padding: 0,
 					}}
 				>
-					★
+					
 				</button>
 			))}
 			<span
@@ -116,6 +116,7 @@ export default function ReviewBook() {
 				error.response?.data?.message ||
 					"Error submitting review. You may have already reviewed this book."
 			);
+			navigate(`/books/${id}`); 
 		}
 	};
 
