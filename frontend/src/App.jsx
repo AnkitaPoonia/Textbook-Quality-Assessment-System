@@ -1,20 +1,20 @@
 import { Routes, Route, Navigate } from "react-router-dom";
-import Login from "./pages/Login";
-import Signup from "./pages/Signup";
-import Home from "./pages/Home"; // Guest Landing Page
-import LoggedHome from "./pages/LoggedHome"; // User Community Feed
-import Books from "./pages/Books"; // The Library (Grid of Books)
-import BookDetail from "./pages/BookDetail";
-import AddBook from "./pages/AddBook";
-import ReviewBook from "./pages/ReviewBook";
-import Admin from "./pages/Admin";
-import UserProfile from "./pages/UserProfile";
-import AdminLogin from "./pages/AdminLogin";
-import ProtectedRoute from "./component/ProtectedRoute";
-import Navbar from "./component/Navbar";
-import Footer from "./component/Footer";
-import { useAuth } from "./context/AuthContext";
-import ShareUpdate from "./pages/ShareUpdate";
+import Login from "./pages/Login.jsx";
+import Signup from "./pages/Signup.jsx";
+import Home from "./pages/Home.jsx"; // Guest Landing Page
+import LoggedHome from "./pages/LoggedHome.jsx"; // User Community Feed
+import Books from "./pages/Books.jsx"; // The Library (Grid of Books)
+import BookDetail from "./pages/BookDetail.jsx";
+import AddBook from "./pages/AddBook.jsx";
+import ReviewBook from "./pages/ReviewBook.jsx";
+import Admin from "./pages/Admin.jsx";
+import UserProfile from "./pages/UserProfile.jsx";
+import AdminLogin from "./pages/AdminLogin.jsx";
+import ProtectedRoute from "./component/ProtectedRoute.jsx";
+import Navbar from "./component/Navbar.jsx";
+import Footer from "./component/Footer.jsx";
+import { useAuth } from "./context/AuthContext.jsx";
+import ShareUpdate from "./pages/ShareUpdate.jsx";
 
 export default function App() {
 	const { user, loading } = useAuth();
